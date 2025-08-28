@@ -35,8 +35,6 @@ open System.Data.SqlClient
 #r "nuget: Microsoft.Data.SqlClient"
 #r "nuget: MSBuild.StructuredLogger, 2.2.337"
 
-#r "nuget: nuget Fake.Core.Trace"
-#r "nuget: nuget Fake.Core.Target"
 // Boilerplate
 System.Environment.GetCommandLineArgs()
 |> Array.skip 2 // skip fsi.exe; build.fsx
