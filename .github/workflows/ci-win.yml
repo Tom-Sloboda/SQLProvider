@@ -24,4 +24,4 @@ jobs:
     - name: Build
       run: ./build.cmd
     - name: Test
-      run: dotnet test ./SQLPovider.Test.sln --no-build --verbosity normal
+      run: dotnet test ./SQLPovider.Tests.sln --no-build --verbosity normal
