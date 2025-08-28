@@ -1,7 +1,4 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: .NET
+name: Linux CI
 
 on:
   push:
@@ -12,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
@@ -25,6 +22,6 @@ jobs:
         dotnet tool restore
         dotnet paket install
     - name: Build
-      run: build.cmd
+      run: ./build.sh
     - name: Test
       run: dotnet test --no-build --verbosity normal
