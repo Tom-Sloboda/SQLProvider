@@ -19,8 +19,10 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: |
+        dotnet tool install paket --global
         dotnet tool restore
-        dotnet paket install
+        paket restore
+        paket install
     - name: Build
       run: ./build.sh
     - name: Test
