@@ -19,6 +19,8 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: |
+        sudo apt-get update
+        sudo apt-get install mono-complete
         dotnet tool install paket --global
         dotnet tool restore
         paket restore
