@@ -28,4 +28,4 @@ jobs:
     - name: Build
       run: ./build.sh
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./SQLProvider.Tests.sln --no-build --verbosity normal
