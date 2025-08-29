@@ -108,3 +108,5 @@ group Tests
     nuget Microsoft.Data.Sqlite.Core 9.0.4
     nuget Microsoft.NETCore.App.Ref 6.0.35
     // nuget Microsoft.Data.Sqlite.Core.Backport // Needed if we want currently Core support on Linux.`
+    nuget DuckDB.NET.Bindings.Full 1.3.2
+    nuget DuckDB.NET.Data.Full 1.3.2
