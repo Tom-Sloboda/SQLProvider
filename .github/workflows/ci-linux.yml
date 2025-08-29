@@ -19,9 +19,13 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: |
+        sudo apt-get update
+        sudo apt-get install mono-complete
+        dotnet tool install paket --global
         dotnet tool restore
-        dotnet paket install
+        paket restore
+        paket install
     - name: Build
       run: ./build.sh
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./SQLProvider.Tests.sln --no-build --verbosity normal
