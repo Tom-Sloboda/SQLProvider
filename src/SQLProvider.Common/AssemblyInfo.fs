@@ -7,8 +7,7 @@ open System.Reflection
 [<assembly: AssemblyDescriptionAttribute("Type provider for SQL database access, common library")>]
 [<assembly: AssemblyVersionAttribute("1.5.13")>]
 [<assembly: AssemblyFileVersionAttribute("1.5.13")>]
-[<assembly: AssemblyVersionAttribute("1.5.14")>]
-[<assembly: AssemblyFileVersionAttribute("1.5.14")>]
+
 do ()
 
 module internal AssemblyVersionInformation =
@@ -17,5 +16,3 @@ module internal AssemblyVersionInformation =
     let [<Literal>] AssemblyDescription = "Type provider for SQL database access, common library"
     let [<Literal>] AssemblyVersion = "1.5.13"
     let [<Literal>] AssemblyFileVersion = "1.5.13"
-    let [<Literal>] AssemblyVersion = "1.5.14"
-    let [<Literal>] AssemblyFileVersion = "1.5.14"
